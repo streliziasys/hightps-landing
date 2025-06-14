@@ -1,7 +1,7 @@
 
 import { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Zap } from 'lucide-react';
 
 const HeroSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -21,24 +21,29 @@ const HeroSection = () => {
           <h1 className="text-6xl md:text-8xl font-bold mb-6 text-shimmer animate-text-shimmer">
             HighTPS
           </h1>
-          <p className="text-xl md:text-2xl text-white/80 mb-8 font-light leading-relaxed">
-            Blazing-fast hosting for Minecraft, VPS, bots & more.
+          <p className="text-xl md:text-2xl text-white/80 mb-4 font-light leading-relaxed">
+            Free Premium Hosting for Everything You Need
+          </p>
+          <p className="text-lg text-white/70 mb-8 max-w-3xl mx-auto">
+            KVM VPS • Bot Hosting • Web Hosting • Minecraft Hosting & More
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
               size="lg" 
-              className="group glint-effect glass-card hover:bg-white/10 border-white/20 text-white font-semibold px-8 py-4 text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-white/10"
+              className="group relative overflow-hidden bg-gradient-to-r from-white to-white/90 hover:from-white/90 hover:to-white text-black font-bold px-10 py-5 text-xl transition-all duration-300 hover:scale-110 shadow-2xl hover:shadow-white/20 border-2 border-white/20 animate-glow-pulse"
               onClick={() => window.open('https://panel.hightps.pro', '_blank')}
             >
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full transition-transform duration-1000 group-hover:translate-x-full" />
+              <Zap className="mr-3 group-hover:rotate-12 transition-transform duration-200" size={24} />
               Access Panel
-              <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform duration-200" size={20} />
+              <ArrowRight className="ml-3 group-hover:translate-x-2 transition-transform duration-200" size={24} />
             </Button>
             
             <Button 
               variant="outline" 
               size="lg" 
-              className="group glint-effect bg-transparent border-white/30 text-white hover:bg-white/5 font-semibold px-8 py-4 text-lg transition-all duration-300 hover:scale-105 hover:border-white/50"
+              className="group glint-effect bg-transparent border-white/50 text-white hover:bg-white/10 font-semibold px-8 py-5 text-lg transition-all duration-300 hover:scale-105 hover:border-white/80"
               onClick={() => window.open('https://discord.gg/hightps', '_blank')}
             >
               Join Discord

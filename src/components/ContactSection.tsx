@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { Mail, MessageSquare, Copy, Check } from 'lucide-react';
+import { Mail, MessageSquare, Copy, Check, Send } from 'lucide-react';
 import { toast } from '@/hooks/use-toast';
 
 const ContactSection = () => {
@@ -46,6 +46,10 @@ const ContactSection = () => {
       description: "contact@hightps.pro has been copied to your clipboard.",
     });
     setTimeout(() => setEmailCopied(false), 2000);
+  };
+
+  const sendEmail = () => {
+    window.open('mailto:contact@hightps.pro?subject=HighTPS Inquiry', '_blank');
   };
 
   return (
@@ -120,24 +124,35 @@ const ContactSection = () => {
                   <p className="text-white/70">contact@hightps.pro</p>
                 </div>
               </div>
-              <Button
-                onClick={copyEmail}
-                variant="outline"
-                size="sm"
-                className="bg-transparent border-white/30 text-white hover:bg-white/5"
-              >
-                {emailCopied ? (
-                  <>
-                    <Check size={16} className="mr-2" />
-                    Copied!
-                  </>
-                ) : (
-                  <>
-                    <Copy size={16} className="mr-2" />
-                    Copy Email
-                  </>
-                )}
-              </Button>
+              <div className="flex gap-3">
+                <Button
+                  onClick={copyEmail}
+                  variant="outline"
+                  size="sm"
+                  className="bg-transparent border-white/30 text-white hover:bg-white/5"
+                >
+                  {emailCopied ? (
+                    <>
+                      <Check size={16} className="mr-2" />
+                      Copied!
+                    </>
+                  ) : (
+                    <>
+                      <Copy size={16} className="mr-2" />
+                      Copy Email
+                    </>
+                  )}
+                </Button>
+                <Button
+                  onClick={sendEmail}
+                  variant="outline"
+                  size="sm"
+                  className="bg-transparent border-white/30 text-white hover:bg-white/5"
+                >
+                  <Send size={16} className="mr-2" />
+                  Send Message
+                </Button>
+              </div>
             </div>
 
             <div className="glass-card p-6 glow-border hover:bg-white/5 transition-all duration-300 group">
