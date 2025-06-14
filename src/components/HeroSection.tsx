@@ -18,20 +18,20 @@ const HeroSection = () => {
       
       <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
         <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-          <h1 className="text-6xl md:text-8xl font-bold mb-6 text-shimmer animate-text-shimmer">
+          <h1 className="text-6xl md:text-8xl font-bold mb-6 text-shimmer animate-title-glow bg-gradient-to-r from-white via-blue-200 to-white bg-[length:200%_100%] bg-clip-text text-transparent animate-gradient-x">
             HighTPS
           </h1>
           <p className="text-xl md:text-2xl text-white/80 mb-4 font-light leading-relaxed">
             Free Premium Hosting for Everything You Need
           </p>
           <p className="text-lg text-white/70 mb-8 max-w-3xl mx-auto">
-            KVM VPS • Bot Hosting • Web Hosting • Minecraft Hosting & More
+            We are a free hosting provider offering KVM VPS • Bot Hosting • Web Hosting • Minecraft Hosting & More
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
               size="lg" 
-              className="group relative overflow-hidden bg-gradient-to-r from-white to-white/90 hover:from-white/90 hover:to-white text-black font-bold px-10 py-5 text-xl transition-all duration-300 hover:scale-110 shadow-2xl hover:shadow-white/20 border-2 border-white/20 animate-glow-pulse"
+              className="group relative overflow-hidden bg-gradient-to-r from-blue-500 via-purple-500 to-blue-500 hover:from-blue-400 hover:via-purple-400 hover:to-blue-400 text-white font-bold px-12 py-6 text-xl transition-all duration-300 hover:scale-110 shadow-2xl hover:shadow-blue-500/30 border-2 border-blue-400/50 animate-pulse-glow"
               onClick={() => window.open('https://panel.hightps.pro', '_blank')}
             >
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full transition-transform duration-1000 group-hover:translate-x-full" />
