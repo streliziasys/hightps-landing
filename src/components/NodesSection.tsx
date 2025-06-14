@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from 'react';
-import { Server, Cpu, HardDrive, Zap, Globe } from 'lucide-react';
+import { Server, Cpu, HardDrive, Zap, Globe, Clock } from 'lucide-react';
 
 const NodesSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -127,6 +127,36 @@ const NodesSection = () => {
               </div>
             </div>
           ))}
+
+          {/* More Nodes Soon Card */}
+          <div
+            className={`glass-card p-8 relative overflow-hidden group border-2 border-dashed border-white/20 hover:border-blue-400/50 transition-all duration-500 ${
+              isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
+            }`}
+            style={{ transitionDelay: '400ms' }}
+          >
+            <div className="flex flex-col items-center justify-center text-center h-full min-h-[300px]">
+              <Clock className="text-blue-400 mb-4 animate-pulse" size={48} />
+              <h3 className="text-2xl font-bold text-white mb-4">More Nodes Soon</h3>
+              <p className="text-white/70 mb-6 max-w-sm">
+                We're expanding our global infrastructure to bring you even better performance and coverage.
+              </p>
+              <div className="flex flex-wrap justify-center gap-3 text-sm text-white/60">
+                <span className="flex items-center gap-1">
+                  <div className="w-1.5 h-1.5 bg-yellow-400 rounded-full" />
+                  Europe
+                </span>
+                <span className="flex items-center gap-1">
+                  <div className="w-1.5 h-1.5 bg-green-400 rounded-full" />
+                  Asia Pacific
+                </span>
+                <span className="flex items-center gap-1">
+                  <div className="w-1.5 h-1.5 bg-purple-400 rounded-full" />
+                  North America
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Additional Features */}
