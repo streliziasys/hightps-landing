@@ -2,6 +2,7 @@
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
 import FeaturesSection from '@/components/FeaturesSection';
+import NodesSection from '@/components/NodesSection';
 import ContactSection from '@/components/ContactSection';
 import ScrollIndicator from '@/components/ScrollIndicator';
 
@@ -12,6 +13,7 @@ const Index = () => {
       <ScrollIndicator />
       <HeroSection />
       <FeaturesSection />
+      <NodesSection />
       <ContactSection />
       
       {/* Footer */}

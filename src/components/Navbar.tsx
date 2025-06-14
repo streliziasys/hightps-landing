@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X, Zap } from 'lucide-react';
@@ -19,6 +18,7 @@ const Navbar = () => {
   const navItems = [
     { name: 'Home', href: '#home' },
     { name: 'Features', href: '#features' },
+    { name: 'Nodes', href: '#nodes' },
     { name: 'Contact', href: '#contact' },
   ];
 
