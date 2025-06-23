@@ -1,6 +1,6 @@
 
 import FeatureCard from './FeatureCard';
-import { Server, Zap, Shield, Globe, Bot, Database } from 'lucide-react';
+import { Server, Zap, Shield } from 'lucide-react';
 
 const FeaturesSection = () => {
   const features = [
@@ -11,34 +11,16 @@ const FeaturesSection = () => {
       delay: 0
     },
     {
-      title: "Minecraft Hosting",
-      description: "Optimized servers with 1-click mod installer, player manager, and server properties configuration. Built for gaming.",
-      icon: Database,
-      delay: 100
-    },
-    {
-      title: "Bot Hosting",
-      description: "Deploy Discord bots, Telegram bots, and custom applications with 24/7 uptime and automatic scaling.",
-      icon: Bot,
-      delay: 200
-    },
-    {
-      title: "Web Hosting",
-      description: "Host websites, APIs, and web applications with free SSL certificates and global CDN integration.",
-      icon: Globe,
-      delay: 300
-    },
-    {
       title: "High Performance",
       description: "Blazing-fast NVMe SSD storage, premium network connectivity, and enterprise-grade hardware infrastructure.",
       icon: Zap,
-      delay: 400
+      delay: 100
     },
     {
       title: "Premium Security",
       description: "DDoS protection, automated backups, SSL certificates, and advanced firewall configurations included free.",
       icon: Shield,
-      delay: 500
+      delay: 200
     }
   ];
 
