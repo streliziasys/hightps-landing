@@ -36,8 +36,8 @@ const NodesSection = () => {
       delay: 0
     },
     {
-      name: "Mexico Node", 
-      location: "🇲🇽 Mexico",
+      name: "USA Node [Paid]", 
+      location: "USA 🇺🇸",
       specs: {
         ram: "125 GB DDR4 RAM",
         cpu: "16 Cores 2x Intel Xeon E5-2683",
