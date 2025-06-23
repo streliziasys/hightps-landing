@@ -39,10 +39,10 @@ const NodesSection = () => {
       name: "USA Node [Paid]", 
       location: "USA 🇺🇸",
       specs: {
-        ram: "125 GB DDR4 RAM",
-        cpu: "16 Cores 2x Intel Xeon E5-2683",
-        frequency: "2.1 GHz",
-        storage: "500 GB NVMe SSD"
+        ram: "256 GB DDR5 RAM",
+        cpu: "18 Cores Ryzen 9 7900",
+        frequency: "3.699 GHz",
+        storage: "1 TB NVMe SSD"
       },
       delay: 200
     }
