@@ -32,7 +32,7 @@ const HeroSection = () => {
             <Button 
               size="lg" 
               className="group relative overflow-hidden bg-gradient-to-r from-blue-500 via-purple-500 to-blue-500 hover:from-blue-400 hover:via-purple-400 hover:to-blue-400 text-white font-bold px-12 py-6 text-xl transition-all duration-300 hover:scale-110 shadow-2xl hover:shadow-blue-500/30 border-2 border-blue-400/50 animate-pulse-glow"
-              onClick={() => window.open('https://panel.hightps.pro', '_blank')}
+              onClick={() => window.open('https://vm.hightps.pro', '_blank')}
             >
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full transition-transform duration-1000 group-hover:translate-x-full" />
               <Zap className="mr-3 group-hover:rotate-12 transition-transform duration-200" size={24} />
