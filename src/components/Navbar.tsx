@@ -58,7 +58,7 @@ const Navbar = () => {
             <Button
               size="sm"
               className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-400 hover:to-purple-400 text-white font-semibold px-6 py-2 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-blue-500/25"
-              onClick={() => window.open('https://panel.hightps.pro', '_blank')}
+              onClick={() => window.open('https://discord.gg/hightps', '_blank')}
             >
               Get Started
             </Button>
